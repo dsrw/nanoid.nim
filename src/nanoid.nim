@@ -1,7 +1,7 @@
 import
   math,
   lenientops,
-  pkg/random,
+  std/sysrand,
   nanoid/nonsecure
 
 export
@@ -37,4 +37,3 @@ proc generate*(alphabet: string = a, size: int = s): string =
           nanoID.add(alphabet[randByte])
           if len(nanoID) >= size:
             return nanoID
-
